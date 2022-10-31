@@ -1,0 +1,15 @@
+'''
+Taking an integer , the program outputs the sum of odd digits.
+'''
+
+k=input("Enter a number you want to get the sum of odd digits")
+total = 0
+n = abs(int(k))
+
+while n>0:
+    a = n % 10
+    if a%2 == 1:
+        total += a
+    n //= 10
+
+print("The sum of the odd digits in number", k ,"is", total)
